@@ -1,0 +1,9 @@
+{
+  "annual_income":["q2q1","80000"],
+  "other_income":["q2q2","10000"],
+  "monthly_expenses":["q3q1","500"],
+  "home_loan_repayments":["q3q2","0"],
+  "Other_loan ":["q3q3","100"],
+  "Other_commitments":["q3q4","0"],
+  "credit_limits":["q3q5","10000"]
+  }

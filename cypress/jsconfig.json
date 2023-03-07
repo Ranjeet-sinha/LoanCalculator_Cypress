@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "../node_modules",
+    "target": "ES2017",
+    "allowSyntheticDefaultImports":true,
+    "types": ["cypress","node"]
+  },
+  "include": ["./node_modules/cypress", "cypress/**/*.js"]
+    
+  }

@@ -1,0 +1,203 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Verify the Loan borrowing calculator feature",
+    "line": 1,
+    "id": "verify-the-loan-borrowing-calculator-feature",
+    "tags": [],
+    "uri": "LoanCalculator.feature",
+    "elements": [
+      {
+        "id": "verify-the-loan-borrowing-calculator-feature;as-a-user-,i-verify-on-clicking-of-the-start-over-button-form-should-be-clear",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "As a user ,I Verify on clicking of the start over button form should be clear",
+        "tags": [
+          {
+            "name": "@Test2",
+            "line": 15
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User Landing on loan calculator home page",
+            "result": {
+              "status": "passed",
+              "duration": 36616000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see the Page title as \"How much could I borrow?\"",
+            "result": {
+              "status": "passed",
+              "duration": 59000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I select the application type as \"single\"",
+            "result": {
+              "status": "passed",
+              "duration": 338000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I select the number of dependent as \"0\"",
+            "result": {
+              "status": "passed",
+              "duration": 247000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I select the borrow type as \"home\"",
+            "result": {
+              "status": "passed",
+              "duration": 372000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I enter the all customer financial data from \"cypress\\fixtures\\InputFolder\\currentIncome_TestData.json\"",
+            "result": {
+              "status": "passed",
+              "duration": 3644000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I click on the \"Start over\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2447000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see the form got cleared",
+            "result": {
+              "status": "failed",
+              "duration": 4103000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<span#borrowResultTextAmount.borrow__result__text__amount.homeloan__borrow__text>' to have text '0', but the text was '$428,000'\n    + expected - actual\n\n    -'$428,000'\n    +'0'\n\n    at Context.eval (https://www.anz.com.au/__cypress/tests?p=cypress\\integration\\LoanCalculator.feature:88:59)\n    at Context.resolveAndRunStepDefinition (https://www.anz.com.au/__cypress/tests?p=cypress\\integration\\LoanCalculator.feature:11783:29)\n    at Context.eval (https://www.anz.com.au/__cypress/tests?p=cypress\\integration\\LoanCalculator.feature:11104:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "verify-the-loan-borrowing-calculator-feature;as-a-user-,i-verfy-that-error-message-when-living-expenses-have-value-$1-and-rest-fields-are-empty",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "As a user ,I Verfy that error message when Living expenses have value $1 and rest fields are empty",
+        "tags": [
+          {
+            "name": "@Test3",
+            "line": 24
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User Landing on loan calculator home page",
+            "result": {
+              "status": "passed",
+              "duration": 19574000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see the Page title as \"How much could I borrow?\"",
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I select the application type as \"single\"",
+            "result": {
+              "status": "passed",
+              "duration": 496000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I select the number of dependent as \"0\"",
+            "result": {
+              "status": "passed",
+              "duration": 302000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I select the borrow type as \"home\"",
+            "result": {
+              "status": "passed",
+              "duration": 408000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I enter Living expenses value as $ \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 508000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "I click on the \"Work out how much I could borrow\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2421000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I should see the error message as \"Based on the details you've entered, we're unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 100641.\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: expected '<div.borrow__error__text>' to have text 'Based on the details you\\'ve entered, we\\'re unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 100641.', but the text was '\\n                    Based on the details you\\'ve entered, we\\'re unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 035 500.\\n                    \\n                '\n    + expected - actual\n\n    -'\\n                    Based on the details you\\'ve entered, we\\'re unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 035 500.\\n                    \\n                '\n    +'Based on the details you\\'ve entered, we\\'re unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 100641.'\n\n    at Context.eval (https://www.anz.com.au/__cypress/tests?p=cypress\\integration\\LoanCalculator.feature:95:57)\n    at Context.resolveAndRunStepDefinition (https://www.anz.com.au/__cypress/tests?p=cypress\\integration\\LoanCalculator.feature:11783:29)\n    at Context.eval (https://www.anz.com.au/__cypress/tests?p=cypress\\integration\\LoanCalculator.feature:11104:35)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
